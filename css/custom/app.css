@@ -1,0 +1,21 @@
+ body
+ {
+   font-family: Arial, helvetica;
+ }
+
+ #main-header
+ {
+   height:100vh;
+   background:linear-gradient(rgba(0,0,0,.8), rgba(50, 40, 40, 0.5)),url("../../images/main-bg.jpg") center;
+ }
+
+ #main-text
+ {
+   color: white;
+ }
+
+ #main-navigation a[class="nav-link"]:link,#main-navigation a[class="nav-link"]:visited,#main-navigation a[class="nav-link"]:hover
+ {
+   color:white;
+   font-weight:bold;
+ }
