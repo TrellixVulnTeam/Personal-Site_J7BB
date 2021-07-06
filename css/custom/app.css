@@ -3,19 +3,48 @@
    font-family: Arial, helvetica;
  }
 
- #main-header
- {
-   height:100vh;
-   background:linear-gradient(rgba(0,0,0,.8), rgba(50, 40, 40, 0.5)),url("../../images/main-bg.jpg") center;
- }
-
- #main-text
- {
-   color: white;
- }
 
  #main-navigation a[class="nav-link"]:link,#main-navigation a[class="nav-link"]:visited,#main-navigation a[class="nav-link"]:hover
  {
    color:white;
    font-weight:bold;
  }
+
+  #main-header
+ {
+   height:100vh;
+   color: white;
+   background:linear-gradient(rgba(0,0,0,.8), rgba(50, 40, 40, 0.5)),url("../../images/main-bg.jpg") center;
+   overflow: hidden;
+ }
+ 
+ #hero
+ {
+   display:flex;
+   height:100vh;
+   align-items: center;
+   justify-content:center;
+
+ }
+
+ .hero-inner
+ {
+   display:flex;
+   text-align:center;
+   align-items:center;
+   justify-content:center;
+   min-height:300px;
+ }
+ 
+ .hero-inner p
+ {
+   font-style:italic;
+   margin-top:0;
+   margin-bottom:0;
+ }
+ 
+ .cust-btn-main
+ {
+   margin-top:15px;
+ }
+
