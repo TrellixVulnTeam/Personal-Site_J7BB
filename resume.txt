@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+          <html lang="en">
+                <head>
+                      <!-- Title of the page -->
+                      <title> Devendra Joshi | Resume</title>
+                </head>
+                <body>
+                     <header>
+                             <!-- Main heading of the resume -->
+                             <h3> Resume </h3>
+                     </header>
+                     <div class="container>
+                     <!-- Resume wrapper begins -->
+                     <span> Education </span>
+                     
+                     </div>
+
+                </body>
+          </html>
