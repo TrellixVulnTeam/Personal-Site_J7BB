@@ -26,8 +26,45 @@
    justify-content:center;
 
  }
+ /*-- Targeting mobile devices ---*/
 
- .hero-inner
+ @media (max-width : 480px) {
+ .mob-top-menu
+ {
+  font-family: 'Quattrocento', serif;
+ }
+
+  .hero-inner
+  {
+    display:flex;
+    text-align:left;
+    align-items:center;
+    justify-content:center;
+    min-height:300px;
+  }
+  
+  .main-text{
+    text-align: center; 
+    margin-bottom:20px;
+    font-family: 'Cinzel', serif;
+  }
+
+  .hero-inner p
+  {
+    font-family: 'Quattrocento', serif;
+    margin-bottom:0;
+  }
+  
+  .cust-btn-main
+  {
+    margin-top:20px;
+  }
+
+ }
+
+ /* -- Targeting larger screen-sizes */
+
+.hero-inner
  {
    display:flex;
    text-align:center;
@@ -35,16 +72,7 @@
    justify-content:center;
    min-height:300px;
  }
+
  
- .hero-inner p
- {
-   font-style:italic;
-   margin-top:0;
-   margin-bottom:0;
- }
- 
- .cust-btn-main
- {
-   margin-top:15px;
- }
+
 
