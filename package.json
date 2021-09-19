@@ -1,0 +1,24 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass css/sass/main.scss css/custom/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devendrajoshicodes/Personal-Site.git"
+  },
+  "author": "Devendra Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devendrajoshicodes/Personal-Site/issues"
+  },
+  "homepage": "https://github.com/devendrajoshicodes/Personal-Site#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "npm-sass": "^3.0.0",
+    "save-dev": "0.0.1-security"
+  }
+}
