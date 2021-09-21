@@ -1,114 +1,27 @@
-//SCSS variables 
-$main-font: 'Quattrocento',
-serif;
-$heading-font:'Cinzel',
-serif;
+// Import Base classes and  variables
+@import "abstracts/functions" ;
+@import "abstracts/mixins" ;
+@import "abstracts/variables";
 
-// Header gradient colors
-$header-gradient-primary: #212f3cce;
-$header-gradient-secondary: #739191af;
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
 
-/* -- Universal reset --*/
+// importing grid 
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+@import "layout/grid";
 
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: $main-font;
-    line-height: 1.6;
-    color: rgb(235, 233, 233);
-    padding: 1.5rem;
-    box-sizing: border-box;
-}
+// Viewport
+@import "pages/index";
+@import "components/composition";
+@import "breakpoints/mobile";
 
 
+@import "components/buttons";
 
-.main-header {
-    height: 95vh;
-    position: relative;
-    background-image: linear-gradient(to bottom right,
-            rgba($header-gradient-primary, .8),
-            rgba($header-gradient-secondary, .8)),
-        url("../../images/main-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(2% 0, 100% 2.2rem, 96% 90%, 0 100%);
-
-    .logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 10rem;
-    }
-
-    .logo-text {
-        color: white;
-        font-size: 2rem;
-        font-weight: 600;
-        font-family: 'Cinzel', serif;
-    }
-
-    .front-main {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    .front-main-heading {
-        display: block;
-        color: #fff;
-        font-size: 3rem;
-        font-weight: 700;
-        letter-spacing: .4rem;
-        font-family: $heading-font;
-        animation: "MovefromLeft";
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-    }
-
-    .front-main-subheading {
-        display: block;
-        animation: MovefromRight;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        font-size: 1.6rem;
-    }
-
-    .front-main-btn {
-        display: inline-block;
-        background: transparent;
-        border: .2rem solid #fff;
-        margin-top: 1.5rem;
-        animation: ButtonAppear 1.8s ease-in;
-        font-size: 1.6rem;
-    }
-
-    .front-main-btn:hover {
-
-        transition: .2s;
-        box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.308);
-
-    }
-
-    .front-main-btn:link,
-    .front-main-btn:hover,
-    .front-main-btn:visited {
-        text-decoration: none;
-        color: #fff;
-        padding: 1rem;
-    }
-}
+ 
+ 
 
 
 
@@ -117,95 +30,5 @@ body {
 
 
 
-/*--- Animating the header ---*/
-
-@keyframes MovefromLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    50% {
-        opacity: 0.5;
-        transform: translateX(-5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes MovefromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    50% {
-        opacity: 0.5;
-        transform: translateX(5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-}
-
-@keyframes ButtonAppear {
-
-    0% {
-        opacity: 0;
-    }
-
-    95% {
-        opacity: 0%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
-
-/* -- smartphones --*/
-
-@media (max-width:48rem) {
-
-    body {
-        padding: .5rem;
-    }
-
-    .logo-box {
-        position: relative;
-        top: 3.5rem;
-        text-align: center;
-        left: 0;
 
 
-    }
-
-    .logo-text {
-        color: white;
-        font-size: 2rem;
-        font-weight: 600;
-        font-family: 'Cinzel', serif;
-        transition: 1s ease-in-out;
-    }
-
-    .front-main-heading {
-        font-size: 3rem;
-        letter-spacing: .2rem;
-        margin-bottom: 1rem;
-    }
-
-    .front-main {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-
-    }
-}

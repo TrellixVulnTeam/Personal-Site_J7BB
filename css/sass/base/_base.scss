@@ -1,0 +1,21 @@
+/* -- Universal reset --*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $main-font;
+    line-height: 1.6;
+    color: rgb(235, 233, 233);
+    padding: 1.5rem;
+    box-sizing: border-box;
+}

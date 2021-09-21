@@ -1,0 +1,106 @@
+/* -- smartphones --*/
+
+@media (max-width:48rem) {
+
+    body {
+        padding: .5rem;
+    }
+
+    .main-header {
+
+        .logo-box {
+            position: relative;
+            top: 3.5rem;
+            text-align: center;
+            left: 0;
+
+            .logo-text {
+                color: white;
+                font-size: 2rem;
+                font-weight: 600;
+                font-family: 'Cinzel', serif;
+                transition: 1s ease-in-out;
+            }
+        }
+
+        .front-main {
+            text-align: center;
+
+            .front-main-heading {
+                font-size: 2.8rem;
+                letter-spacing: .2rem;
+                margin-bottom: 1rem;
+            }
+
+            .front-main-subheading {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    //styling about section
+
+    //Grid
+    .row {
+        max-width: 100% !important;
+        margin-right: 0;
+
+
+        .col-1 {
+            float: none;
+
+            &-of-2 {
+                width: 90%;
+                display: block;
+                margin: 0 auto !important;
+
+
+            }
+        }
+
+    }
+
+    .about-section {
+        height: 50vh;
+        font-size: 1.6rem;
+        color: rgb(95, 93, 93);
+
+
+        &__heading {
+            text-align: center;
+            margin-top: 2rem;
+            font-weight: 700;
+            font-family: $heading-font;
+
+        }
+
+        &__subheading {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+
+        &__images {
+            text-align: center;
+
+            & h3 {
+                margin-top: 3rem;
+            }
+
+            .composition {
+                margin-top: 3rem;    
+            }
+        }
+
+       
+    }
+
+    //composition
+    .composition__photo {
+        &--2 {
+            left: 55%;
+            top: 12rem;
+        }
+    }
+}

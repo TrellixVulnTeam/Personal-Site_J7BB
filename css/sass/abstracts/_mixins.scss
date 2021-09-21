@@ -1,0 +1,10 @@
+@mixin clearfix
+{
+    &::after
+    {
+        content: "";
+        display: table;
+        clear:both;
+        // setting content to "" and displaying the element as a table along with the clear property will clear the floating columns. 
+    }
+}

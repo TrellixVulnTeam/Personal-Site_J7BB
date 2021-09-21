@@ -1,0 +1,51 @@
+/*--- Animating the header ---*/
+
+@keyframes MovefromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(-5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes MovefromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes ButtonAppear {
+
+    0% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

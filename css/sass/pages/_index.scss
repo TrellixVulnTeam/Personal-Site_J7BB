@@ -1,0 +1,83 @@
+.main-header {
+    height: 95vh;
+    position: relative;
+    background-image: linear-gradient(to bottom right,
+            rgba($header-gradient-primary, .8),
+            rgba($header-gradient-secondary, .8)),
+        url("../../images/main-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(2% 0, 100% 2.2rem, 100% 90%, 0 100%);
+
+    .logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 10rem;
+    }
+
+    .logo-text {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Cinzel', serif;
+    }
+
+    .front-main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .front-main-heading {
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: .4rem;
+        font-family: $heading-font;
+        animation: "MovefromLeft";
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    .front-main-subheading {
+        display: block;
+        animation: MovefromRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        font-size: 1.6rem;
+    }
+
+}
+
+// Styling the about section
+.about-section {
+    height: 50vh;
+    font-size: 1.6rem;
+    color: rgb(95, 93, 93);
+
+
+    &__heading {
+        text-align: center;
+        margin-top: 2rem;
+        font-weight:700;
+        font-family:$heading-font;
+
+    }  
+
+    &__subheading{
+        text-align:center;
+        font-weight:600;
+        margin-bottom:2rem;
+    }
+
+    &__images
+    {
+        text-align: center;
+    }
+
+
+}

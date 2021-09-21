@@ -16,61 +16,6 @@ body {
   padding: 1.5rem;
   box-sizing: border-box; }
 
-.main-header {
-  height: 95vh;
-  position: relative;
-  background-image: linear-gradient(to bottom right, rgba(33, 47, 60, 0.8), rgba(115, 145, 145, 0.8)), url("../../images/main-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(2% 0, 100% 2.2rem, 96% 90%, 0 100%); }
-  .main-header .logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 10rem; }
-  .main-header .logo-text {
-    color: white;
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: 'Cinzel', serif; }
-  .main-header .front-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .main-header .front-main-heading {
-    display: block;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: .4rem;
-    font-family: "Cinzel", serif;
-    animation: "MovefromLeft";
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
-  .main-header .front-main-subheading {
-    display: block;
-    animation: MovefromRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    font-size: 1.6rem; }
-  .main-header .front-main-btn {
-    display: inline-block;
-    background: transparent;
-    border: .2rem solid #fff;
-    margin-top: 1.5rem;
-    animation: ButtonAppear 1.8s ease-in;
-    font-size: 1.6rem; }
-  .main-header .front-main-btn:hover {
-    transition: .2s;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.308); }
-  .main-header .front-main-btn:link,
-  .main-header .front-main-btn:hover,
-  .main-header .front-main-btn:visited {
-    text-decoration: none;
-    color: #fff;
-    padding: 1rem; }
-
 /*--- Animating the header ---*/
 @keyframes MovefromLeft {
   0% {
@@ -102,28 +47,169 @@ body {
   100% {
     opacity: 100%; } }
 
-/* -- smartphones --*/
-@media (max-width: 48rem) {
-  body {
-    padding: .5rem; }
-  .logo-box {
-    position: relative;
-    top: 3.5rem;
-    text-align: center;
-    left: 0; }
-  .logo-text {
+.margin-bottom-med {
+  margin-bottom: 3rem; }
+
+.text-center {
+  text-align: center !important; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 2rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row .col-1, .row .col-1-of-2, .row .col-1-of-3, .row .col-1-of-4 {
+    float: left; }
+    .row .col-1-of-2 {
+      width: calc((100% - 4rem) / 2); }
+    .row .col-1-of-3 {
+      width: calc((100% - (4rem)*2) / 3); }
+    .row .col-1-of-4 {
+      width: calc((100% - (4rem)*3) / 4); }
+    .row .col-1:not(:last-child), .row .col-1-of-2:not(:last-child), .row .col-1-of-3:not(:last-child), .row .col-1-of-4:not(:last-child) {
+      margin-right: 4rem; }
+
+.main-header {
+  height: 95vh;
+  position: relative;
+  background-image: linear-gradient(to bottom right, rgba(33, 47, 60, 0.8), rgba(115, 145, 145, 0.8)), url("../../images/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(2% 0, 100% 2.2rem, 100% 90%, 0 100%); }
+  .main-header .logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 10rem; }
+  .main-header .logo-text {
     color: white;
     font-size: 2rem;
     font-weight: 600;
-    font-family: 'Cinzel', serif;
-    transition: 1s ease-in-out; }
-  .front-main-heading {
-    font-size: 3rem;
-    letter-spacing: .2rem;
-    margin-bottom: 1rem; }
-  .front-main {
+    font-family: 'Cinzel', serif; }
+  .main-header .front-main {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; } }
+    text-align: center; }
+  .main-header .front-main-heading {
+    display: block;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .4rem;
+    font-family: "Cinzel", serif;
+    animation: "MovefromLeft";
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .main-header .front-main-subheading {
+    display: block;
+    animation: MovefromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    font-size: 1.6rem; }
+
+.about-section {
+  height: 50vh;
+  font-size: 1.6rem;
+  color: #5f5d5d; }
+  .about-section__heading {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 700;
+    font-family: "Cinzel", serif; }
+  .about-section__subheading {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem; }
+  .about-section__images {
+    text-align: center; }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 32%;
+    position: absolute; }
+    .composition__photo--1 {
+      left: 30%;
+      top: 5rem;
+      border-radius: 200%;
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.363); }
+    .composition__photo--2 {
+      left: 55%;
+      top: 14rem; }
+    .composition__photo--3 {
+      left: 10%; }
+
+/* -- smartphones --*/
+@media (max-width: 48rem) {
+  body {
+    padding: .5rem; }
+  .main-header .logo-box {
+    position: relative;
+    top: 3.5rem;
+    text-align: center;
+    left: 0; }
+    .main-header .logo-box .logo-text {
+      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: 'Cinzel', serif;
+      transition: 1s ease-in-out; }
+  .main-header .front-main {
+    text-align: center; }
+    .main-header .front-main .front-main-heading {
+      font-size: 2.8rem;
+      letter-spacing: .2rem;
+      margin-bottom: 1rem; }
+    .main-header .front-main .front-main-subheading {
+      font-size: 1.4rem; }
+  .row {
+    max-width: 100% !important;
+    margin-right: 0; }
+    .row .col-1, .row .col-1-of-2, .row .col-1-of-3, .row .col-1-of-4 {
+      float: none; }
+      .row .col-1-of-2 {
+        width: 90%;
+        display: block;
+        margin: 0 auto !important; }
+  .about-section {
+    height: 50vh;
+    font-size: 1.6rem;
+    color: #5f5d5d; }
+    .about-section__heading {
+      text-align: center;
+      margin-top: 2rem;
+      font-weight: 700;
+      font-family: "Cinzel", serif; }
+    .about-section__subheading {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 2rem; }
+    .about-section__images {
+      text-align: center; }
+      .about-section__images h3 {
+        margin-top: 3rem; }
+      .about-section__images .composition {
+        margin-top: 3rem; }
+  .composition__photo--2 {
+    left: 55%;
+    top: 12rem; } }
+
+.front-main-btn {
+  display: inline-block;
+  background: transparent;
+  border: .2rem solid #fff;
+  margin-top: 1.5rem;
+  animation: ButtonAppear 1.8s ease-in;
+  font-size: 1.6rem; }
+  .front-main-btn:hover {
+    transition: .2s;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.308); }
+  .front-main-btn:link, .front-main-btn:hover, .front-main-btn:visited {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem; }

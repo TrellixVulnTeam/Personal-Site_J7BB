@@ -1,0 +1,54 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+
+      // Total width of the grid - the horizontal gutter divided by two to calculate the width
+        // To use the sass variables in the calc funtion we will have to surround them in parenthesis and put a pound sign in front of them. This is because, calc function will proceess these details on the client machine and SASS is not compiled during execution of the css code on the client machine, but rather is comiled to css during development.
+
+        // We use 100% in place of grid width because we want to make sure that the layout is responsive. For this, we will have to consider the width as 100% which is equal to $grid-width -- 1140px / 114 rem;
+        
+        // Floating left will allign the grids side by side. 
+        
+    .col-1 {
+      
+        float:left;
+
+        &-of-2 
+        {
+            @extend .col-1;
+            width: calc((100% - #{$gutter-horizontal}) / 2); 
+        }
+
+        &-of-3
+        {
+            @extend .col-1;
+            width: calc((100% - (#{$gutter-horizontal})*2) / 3); 
+
+        }
+
+        &-of-4
+        {
+            @extend .col-1;
+            width: calc((100% - (#{$gutter-horizontal})*3) / 4); 
+
+        }
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+
+    }
+
+    
+    // Applying clearfix to the row. as all the floated elements will render the height of the grid to 0;
+
+    
+}

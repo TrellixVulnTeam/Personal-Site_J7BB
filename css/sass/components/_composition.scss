@@ -1,0 +1,29 @@
+.composition{
+   position: relative;
+
+    &__photo{
+        width:32%;
+        position:absolute;
+        
+
+    &--1 // JS
+    {   
+        left: 30%; 
+        top: 5rem;
+        border-radius:200%;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.363);      
+    }  
+    
+    &--2 // SASS
+    {   
+        left:55%;
+        top:14rem;     
+    }   
+
+    &--3 // HTML
+    {   
+        left:10%;
+      
+    }   
+    }
+} 
