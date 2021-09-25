@@ -199,6 +199,11 @@ body {
     left: 55%;
     top: 12rem; } }
 
+.site-footer {
+  background-color: navy;
+  color: white;
+  padding: 1rem; }
+
 .front-main-btn {
   display: inline-block;
   background: transparent;
