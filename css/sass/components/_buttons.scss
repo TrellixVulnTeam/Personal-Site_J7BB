@@ -22,3 +22,31 @@
     }
 }
 
+
+.btn {
+
+    border: .3rem solid rgb(50, 50, 54);
+    font-size: 1.6rem;
+    font-family: $main-font;
+    padding:1rem;
+
+    &:hover {
+
+        background-color: teal;
+        color:#fff;
+        border: .3rem solid white;
+    }
+    
+    &:link,
+    &:hover,
+    &:visited {
+        text-decoration: none;
+
+    }
+
+    &-block{
+        display: block;
+        width:90%;
+        margin: 0 auto;
+    }
+}

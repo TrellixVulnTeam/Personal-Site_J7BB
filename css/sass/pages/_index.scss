@@ -55,29 +55,68 @@
 
 // Styling the about section
 .about-section {
-    height: 50vh;
+    height: 40vh;
     font-size: 1.6rem;
     color: rgb(95, 93, 93);
 
 
-    &__heading {
-        text-align: center;
-        margin-top: 2rem;
-        font-weight:700;
-        font-family:$heading-font;
-
-    }  
-
-    &__subheading{
-        text-align:center;
-        font-weight:600;
-        margin-bottom:2rem;
+    .heading {
+        @include heading;
     }
 
-    &__images
-    {
+    &__subheading {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    &__images {
         text-align: center;
     }
 
 
 }
+
+// Styles for article section. 
+.section_article {
+    font-size: 1.6rem;
+    color: rgb(95, 93, 93);
+
+
+    .heading {
+        @include heading;
+    }
+
+
+    .card {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        margin-bottom: 3rem !important;
+
+        &--image {
+            max-width: 100%;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+        }
+
+        .card-content {
+          display: block;
+          font-weight: bold;
+
+            &--category
+            {
+                color:teal;
+                margin:1rem 0 1rem 0;
+            }
+
+            &--summary 
+            {
+                margin-bottom:2rem;
+            }
+        }    
+    }
+
+    &:only-child {
+        margin: 0 10%;
+    }
+} 

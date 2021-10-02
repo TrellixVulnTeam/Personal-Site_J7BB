@@ -1,10 +1,17 @@
-@mixin clearfix
-{
-    &::after
-    {
+@mixin clearfix {
+    &::after {
         content: "";
         display: table;
-        clear:both;
+        clear: both;
         // setting content to "" and displaying the element as a table along with the clear property will clear the floating columns. 
     }
+}
+
+@mixin heading {
+    text-align: center;
+    //margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-family: $heading-font;
+
 }

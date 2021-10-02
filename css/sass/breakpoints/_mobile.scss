@@ -1,6 +1,10 @@
 /* -- smartphones --*/
 
 @media (max-width:48rem) {
+    .btn {
+        background-color: teal;
+        color:#fff;
+    }
 
     body {
         padding: .5rem;
@@ -52,9 +56,7 @@
             &-of-2 {
                 width: 90%;
                 display: block;
-                margin: 0 auto !important;
-
-
+                margin: 3rem auto !important;
             }
         }
 
@@ -62,7 +64,7 @@
 
     .about-section {
         height: 50vh;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         color: rgb(95, 93, 93);
 
 
@@ -96,6 +98,21 @@
        
     }
 
+    .section-article
+    {
+        .card
+        {   font-size:1.5rem;
+            margin-bottom: 2rem;
+
+            .card-content
+            {
+                text-align: center; 
+            }
+            
+        }
+        
+    }
+
     //composition
     .composition__photo {
         &--2 {
@@ -103,4 +120,12 @@
             top: 12rem;
         }
     }
+
+// Styling footer
+.site-footer
+{
+    font-size: 1.4rem !important;
+    border-top:1px solid rgba(128, 128, 128, 0.699);
+}
+
 }
