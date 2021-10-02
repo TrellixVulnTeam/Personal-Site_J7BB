@@ -200,9 +200,10 @@ body {
     top: 12rem; } }
 
 .site-footer {
-  background-color: navy;
-  color: white;
-  padding: 1rem; }
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin-top: .1rem solid grey;
+  color: grey; }
 
 .front-main-btn {
   display: inline-block;
